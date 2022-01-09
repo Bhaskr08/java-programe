@@ -1,0 +1,18 @@
+ package com.company;
+import java.util.Scanner;
+
+public class hextobinary {
+    public static void main(String[] args) {
+
+        int number;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("enter hexadecimal number");
+        number = Integer.parseInt(sc.nextLine(),16);
+
+        String binaryValue = Integer.toBinaryString(number);
+        System.out.println("binary value is = " +binaryValue);
+
+        sc.close();
+    }
+}

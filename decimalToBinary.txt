@@ -1,0 +1,30 @@
+ package com.company;
+import java.util.Scanner;
+import java.util.function.IntBinaryOperator;
+
+public class decimalToBinary {
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+    /*    System.out.println("enter a decimal number");
+        int num = sc.nextInt();
+
+        String b = "";
+        int t = num;
+        while (t>0){
+        int r = t%2;
+        t = t/2;
+        b = r+b;
+        }
+        System.out.println("binary number is " +b);*/
+
+
+        //2nd method
+        System.out.println("enter a decimal number");
+        int decinum = sc.nextInt();
+
+         String result = Integer.toBinaryString(decinum);
+        System.out.println("the binary number is : " +result);
+
+    }
+}

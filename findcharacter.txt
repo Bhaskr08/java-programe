@@ -1,0 +1,20 @@
+ package com.company;
+import java.util.Scanner;
+
+public class findcharacter {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter character");
+        char ch = sc.next().charAt(0);
+
+        if (ch>='A'&& ch<='Z') {
+            System.out.println("character is uppercase");
+            } else if (ch>='a'&& ch<='z') {
+                System.out.println("character is lowercase");
+            } else {
+            System.out.println("the character is special case");
+        }
+
+
+    }
+}
